@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"ina226_stm32\startup_stm32f103xb.o"
+"ina226_stm32\main.o"
+"ina226_stm32\gpio.o"
+"ina226_stm32\i2c.o"
+"ina226_stm32\usart.o"
+"ina226_stm32\stm32f1xx_it.o"
+"ina226_stm32\stm32f1xx_hal_msp.o"
+"ina226_stm32\ina226.o"
+"ina226_stm32\stm32f1xx_hal_gpio_ex.o"
+"ina226_stm32\stm32f1xx_hal_i2c.o"
+"ina226_stm32\stm32f1xx_hal.o"
+"ina226_stm32\stm32f1xx_hal_rcc.o"
+"ina226_stm32\stm32f1xx_hal_rcc_ex.o"
+"ina226_stm32\stm32f1xx_hal_gpio.o"
+"ina226_stm32\stm32f1xx_hal_dma.o"
+"ina226_stm32\stm32f1xx_hal_cortex.o"
+"ina226_stm32\stm32f1xx_hal_pwr.o"
+"ina226_stm32\stm32f1xx_hal_flash.o"
+"ina226_stm32\stm32f1xx_hal_flash_ex.o"
+"ina226_stm32\stm32f1xx_hal_exti.o"
+"ina226_stm32\stm32f1xx_hal_uart.o"
+"ina226_stm32\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "INA226_STM32\INA226_STM32.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "INA226_STM32.map" -o INA226_STM32\INA226_STM32.axf
